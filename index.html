@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aim Trainer (Canvas)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="startup();">
+
+    <div class="container">
+        <!-- Top Bar with Buttons -->
+        <div class="top-bar">
+            <button id="startBtn">Start</button>
+            <button id="pauseBtn">Pause</button>
+            <button id="resumeBtn" disabled>Resume</button>
+            <button id="resetBtn">Reset</button>
+            <select id="difficulty">
+                <option value="1000">Easy (1 sec)</option>
+                <option value="500">Medium (0.5 sec)</option>
+                <option value="300">Hard (0.3 sec)</option>
+                <option value="200">Super Hard (0.2 sec)</option>
+                <option value="100">Ultra Hard (0.1 sec)</option>
+            </select>
+            <select id="mode">
+                <option value="30">30 points</option>
+                <option value="50">50 points</option>
+                <option value="100">100 points</option>
+                <option value="1000000000000000">Practice</option>
+            </select>
+            <div id="scoreDisplay" style="font-size: 20px;">Score:<div id="score-value">0</div></div>
+            <div id="timerDisplay" style="font-size: 20px;">Timer:<div id="timecount">0</div></div>
+
+        </div>
+
+        <!-- Game Area -->
+        <div class="game-box">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
