@@ -70,3 +70,10 @@ To make your game publicly accessible, you can use **ngrok**.
    ngrok http 80
    ```
 4. **Share the provided public URL** to allow others to access your game.  
+# UI
+## DEFAULT INTERFACE
+![Game Screenshot](images/defaultscreen.png)
+## LOGGED IN INTERFACE
+![LoggedIn Screenshot](images/loggedinscreen.png)
+## SHORT PREVIEW OF GAMEPLAY
+![Gameplay GIF](images/sitetest.gif)
