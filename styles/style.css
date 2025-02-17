@@ -1,0 +1,142 @@
+/* I dont think i need to rlly explain and comment these*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+}   
+.wrapper {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.login-box {
+    width: 220px;
+    padding: 20px;
+    background: #444;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+.login-box h2 {
+    margin-bottom: 10px;
+}
+.login-box input {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+}
+.login-box button {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    background-color: #666;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.login-box button:hover {
+    background-color: #777;
+}
+.game-container {
+    width: 750px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+.top-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #555;
+    color: white;
+}
+button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #666;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: #777;
+}
+button:disabled {
+    background-color: #444;
+    cursor: not-allowed;
+}
+select {
+    padding: 5px;
+    border-radius: 5px;
+    background: #666;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+select:hover {
+    background: #777;
+}
+.game-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+}
+canvas {
+    width: 100%;
+    height: 100%;
+}
+.right {
+    width: 300px;
+    height: auto;
+    background: #444; /* Dark Gray */
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.right h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+.right table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #555; 
+}
+.right th, .right td {
+    padding: 8px;
+    border: 1px solid #666;
+    color: white; 
+}
+.right th {
+    background: #666;
+    font-weight: bold;
+}
+.right tr:nth-child(even) {
+    background: #555;
+}
